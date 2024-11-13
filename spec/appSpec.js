@@ -278,4 +278,16 @@ describe("the oneHoureLine", function () {
         expect(result).toBe("trois lampes rouge allumée");
     });
 
+    it("oneHourLine should return 4 lamps when given 4:00", function () {
+        const time = "4:00";
+
+        const result = clock.oneHourLine(time);
+
+        console.log("Test oneHoursBlock:", time,":",result);
+
+        console.log("");
+
+        expect(result).toBe("quatre lampes rouge allumée");
+    });
+
 });
