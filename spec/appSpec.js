@@ -252,4 +252,18 @@ describe("the oneHoureLine", function () {
 
         expect(result).toBe("une lampe rouge allumée");
     });
+
+    it("oneHourLine should return 2 lamps when given 2:00", function () {
+        const time = "2:00";
+
+        const result = clock.oneHourLine(time);
+
+        console.log("Test oneHoursBlock:", time,":",result);
+
+        console.log("");
+
+
+        expect(result).toBe("deux lampes rouge allumée");
+    });
+
 });

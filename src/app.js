@@ -42,6 +42,7 @@ export class BerlinClock {
 
         if (hours === 0) return "Aucune lampe allumée";
         if (hours === 1) return "une lampe rouge allumée";
+        if (hours === 2) return "deux lampes rouge allumée";
 
     }
 
