@@ -406,7 +406,7 @@ describe("the berlinclock",function(){
         console.log("Test berlin_cock:", time,":","[",result,"]");
 
         console.log("");
-        
+
         expect(result).toBe("Aucune lampe allumée"+"\n"+"Aucune lampe allumée"+"\n"+"Aucune lampe allumée"+"\n"+"aucune lampe allumée"+"\n"+"lampe jaune allumée");
     });
 
@@ -422,5 +422,17 @@ describe("the berlinclock",function(){
         expect(result).toBe("trois lampes rouge allumée"+"\n"+"quatre lampes rouge allumée"+"\n"+"lampe jaune, lampe jaune, lampe rouge, lampe jaune, lampe jaune, lampe rouge, lampe jaune, lampe jaune"+"\n"+"deux lampes jaune allumée"+"\n"+"lampe éteinte");
 
    });
+   it("berlinClock should return the correct representation for 23:59:59", function() {
+        const time = "23:59:59";
+
+        const result = clock.berlinClock(time);
+
+        console.log("Test berlin_clock:", time,":","[",result,"]");
+
+        console.log("");
+
+        expect(result).toBe("quatre lampes rouge allumée"+"\n"+"trois lampes rouge allumée"+"\n"+"lampe jaune, lampe jaune, lampe rouge, lampe jaune, lampe jaune, lampe rouge, lampe jaune, lampe jaune, lampe rouge, lampe jaune, lampe jaune"+"\n"+"quatre lampes jaune allumée"+"\n"+"lampe éteinte");
+
+    });
 
 });
