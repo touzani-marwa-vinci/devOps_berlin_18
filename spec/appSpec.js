@@ -398,4 +398,13 @@ describe("the secondsLine", function () {
 describe("the berlinclock",function(){
     const clock=new BerlinClock();
     
+    it("berlinClick should return the correct result when given 0:00:00",function(){
+        const time="0:00:00";
+
+        const result=clock.berlinClock(time)
+        console.log("Test berlin_cock:", time,":","[",result,"]");
+        console.log("");
+        expect(result).toBe("Aucune lampe allumée"+"\n"+"Aucune lampe allumée"+"\n"+"Aucune lampe allumée"+"\n"+"aucune lampe allumée"+"\n"+"lampe jaune allumée");
+    });
+
 });
