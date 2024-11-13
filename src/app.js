@@ -63,5 +63,10 @@ export class BerlinClock {
 
 
     }
+    secondeLine(time){
 
+        const seconds=parseInt(time.split(":")[2]);
+        if(seconds %2===0)return "lampe jaune allumée";
+        return "lampe éteinte";
+    }
 }

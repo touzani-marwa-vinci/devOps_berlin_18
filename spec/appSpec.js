@@ -355,3 +355,19 @@ describe("the fiveHoursLine", function () {
     });
 
 });
+
+describe("the secondsLine", function () {
+    const clock = new BerlinClock();
+
+    it("secondeLine should return lamp when given 0:00:01", function () {
+        const time = "0:00:01";
+
+        const result = clock.secondeLine(time);
+
+        console.log("Test secondes:", time,":",result);
+
+        console.log("");
+
+        expect(result).toBe("lampe éteinte");
+    });
+});
