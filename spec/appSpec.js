@@ -370,4 +370,16 @@ describe("the secondsLine", function () {
 
         expect(result).toBe("lampe éteinte");
     });
+    
+    it("secondeLine should return lamp when given 0:00:02", function () {
+        const time = "0:00:02";
+
+        const result = clock.secondeLine(time);
+
+        console.log("Test secondes:", time,":",result);
+
+        console.log("");
+
+        expect(result).toBe("lampe jaune allumée");
+    });
 });
