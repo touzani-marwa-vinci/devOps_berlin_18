@@ -1,0 +1,25 @@
+{
+  "name": "devops_berlin_18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/touzani-marwa-vinci/devOps_berlin_18.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/touzani-marwa-vinci/devOps_berlin_18/issues"
+  },
+  "homepage": "https://github.com/touzani-marwa-vinci/devOps_berlin_18#readme",
+  "devDependencies": {
+    "jasmine": "^5.4.0"
+  }
+}
