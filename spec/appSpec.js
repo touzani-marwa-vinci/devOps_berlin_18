@@ -239,4 +239,17 @@ describe("the oneHoureLine", function () {
 
         expect(result).toBe("Aucune lampe allumée");
     });
+
+    it("oneHourLine should return 1 lamp when given 1:00", function () {
+        const time = "1:00";
+
+        const result = clock.oneHourLine(time);
+
+        console.log("Test oneHoursBlock:", time,":",result);
+
+        console.log("");
+
+
+        expect(result).toBe("une lampe rouge allumée");
+    });
 });

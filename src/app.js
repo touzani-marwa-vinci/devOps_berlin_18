@@ -41,7 +41,8 @@ export class BerlinClock {
         const hours = parseInt(time.split(":")[0]) % 5;
 
         if (hours === 0) return "Aucune lampe allumée";
-        
+        if (hours === 1) return "une lampe rouge allumée";
+
     }
 
 }
