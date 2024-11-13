@@ -36,4 +36,12 @@ export class BerlinClock {
         return result ? result.slice(0, -2) : "Aucune lampe allumée";
     }
 
+    oneHourLine(time) {
+
+        const hours = parseInt(time.split(":")[0]) % 5;
+
+        if (hours === 0) return "Aucune lampe allumée";
+        
+    }
+
 }

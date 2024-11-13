@@ -223,3 +223,20 @@ describe("the 5MinuteLine", function() {
         expect(result).toBe("lampe jaune, lampe jaune\ndeux lampes jaune allumée");
     });
 });
+
+describe("the oneHoureLine", function () {
+    const clock = new BerlinClock();
+
+    it("oneHourLine should return no lamp when given 0:00", function () {
+        const time = "0:00";
+
+        const result = clock.oneHourLine(time);
+
+        console.log("Test oneHoursBlock:", time,":",result);
+
+        console.log("");
+
+
+        expect(result).toBe("Aucune lampe allumée");
+    });
+});
