@@ -52,7 +52,9 @@ export class BerlinClock {
         const hours = parseInt(time.split(":")[0]);
 
         if (hours < 5) return "Aucune lampe allumée";
-        
+        if (hours >= 5 && hours < 10) return "une lampe rouge allumée";
+
+
     }
 
 }
