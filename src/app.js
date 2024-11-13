@@ -10,11 +10,15 @@ export class BerlinClock {
 
       if(this.twoLamp(minutes))return "deux lampes jaune allumée";
 
-      if(minutes % 10 ===3 || minutes % 10 === 8)return "trois lampes jaune allumée";
+      if(this.threeLamp(minutes))return "trois lampes jaune allumée";
 
       if(minutes % 10 ===4 || minutes % 10 === 9)return "quatre lampes jaune allumée";
 
 
+    }
+
+    threeLamp(minutes) {
+        return minutes % 10 === 3 || minutes % 10 === 8;
     }
 
     twoLamp(minutes) {
