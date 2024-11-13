@@ -47,5 +47,12 @@ export class BerlinClock {
         if (hours === 4) return "quatre lampes rouge allumée";
 
     }
+    fiveHourLine(time) {
+
+        const hours = parseInt(time.split(":")[0]);
+
+        if (hours < 5) return "Aucune lampe allumée";
+        
+    }
 
 }

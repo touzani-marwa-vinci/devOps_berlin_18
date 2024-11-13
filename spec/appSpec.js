@@ -291,3 +291,20 @@ describe("the oneHoureLine", function () {
     });
 
 });
+
+describe("the fiveHoursLine", function () {
+    const clock = new BerlinClock();
+
+    it("fiveHoursLine should return no lamp when given 0:00", function () {
+        const time = "0:00";
+
+        const result = clock.fiveHourLine(time);
+
+        console.log("Test fiveHoursBlock:", time,":",result);
+
+        console.log("");
+
+        expect(result).toBe("Aucune lampe allumée");
+
+    });
+});
