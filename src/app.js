@@ -17,4 +17,23 @@ export class BerlinClock {
 
     }
 
+    fiveMinuteLine(time) {
+        const minutes = parseInt(time.split(":")[1]);
+        let result = "";
+
+        for (let i = 1; i <= 11; i++) {
+            if (i * 5 <= minutes) {
+                if (i % 3 === 0) {
+                    result += "lampe rouge, ";
+                } else {
+                    result += "lampe jaune, ";
+                }
+            } else {
+                break;
+            }
+        }
+
+        return result ? result.slice(0, -2) : "Aucune lampe allumée";
+    }
+
 }
