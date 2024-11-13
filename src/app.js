@@ -4,7 +4,7 @@ export class BerlinClock {
 
       const minutes = parseInt(time.split(":")[1]);
 
-      if(minutes % 10 ===0 || minutes % 10 === 5)return "aucune lampe allumée";
+      if(this.noLamp(minutes))return "aucune lampe allumée";
       
       if(minutes % 10 ===1 || minutes % 10 === 6)return "1ère lampe jaune allumée";
 
@@ -15,6 +15,10 @@ export class BerlinClock {
       if(minutes % 10 ===4 || minutes % 10 === 9)return "quatre lampes jaune allumée";
 
 
+    }
+
+    noLamp(minutes) {
+        return minutes % 10 === 0 || minutes % 10 === 5;
     }
 
     fiveMinuteLine(time) {
