@@ -59,6 +59,8 @@ export class BerlinClock {
         
         if(hours>=15 && hours<20)return "trois lampes rouge allumée";
 
+        if(hours>=20 && hours<25)return "quatre lampes rouge allumée";
+
 
     }
 

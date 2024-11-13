@@ -329,7 +329,7 @@ describe("the fiveHoursLine", function () {
 
         expect(result).toBe("deux lampes rouge allumée");
     });
-    
+
     it("fiveHoursLine should return 3 lamps when given 15:00", function () {
         const time = "15:00";
 
@@ -340,6 +340,18 @@ describe("the fiveHoursLine", function () {
         console.log("");
 
         expect(result).toBe("trois lampes rouge allumée");
+    });
+
+    it("fiveHoursLine should return 4 lamps when given 20:00", function () {
+        const time = "20:00";
+
+        const result = clock.fiveHourLine(time);
+
+        console.log("Test fiveHoursBlock:", time,":",result);
+
+        console.log("");
+
+        expect(result).toBe("quatre lampes rouge allumée");
     });
 
 });
