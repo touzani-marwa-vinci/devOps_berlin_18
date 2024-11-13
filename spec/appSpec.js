@@ -397,14 +397,30 @@ describe("the secondsLine", function () {
 });
 describe("the berlinclock",function(){
     const clock=new BerlinClock();
-    
+
     it("berlinClick should return the correct result when given 0:00:00",function(){
         const time="0:00:00";
 
         const result=clock.berlinClock(time)
+
         console.log("Test berlin_cock:", time,":","[",result,"]");
+
         console.log("");
+        
         expect(result).toBe("Aucune lampe allumée"+"\n"+"Aucune lampe allumée"+"\n"+"Aucune lampe allumée"+"\n"+"aucune lampe allumée"+"\n"+"lampe jaune allumée");
     });
+
+    it("berlinClick should return the correct result when given 19:42:01",function(){
+        const time="19:42:01";
+
+        const result=clock.berlinClock(time)
+
+        console.log("Test berlin_clock:", time,":","[",result,"]");
+
+        console.log("");
+
+        expect(result).toBe("trois lampes rouge allumée"+"\n"+"quatre lampes rouge allumée"+"\n"+"lampe jaune, lampe jaune, lampe rouge, lampe jaune, lampe jaune, lampe rouge, lampe jaune, lampe jaune"+"\n"+"deux lampes jaune allumée"+"\n"+"lampe éteinte");
+
+   });
 
 });
