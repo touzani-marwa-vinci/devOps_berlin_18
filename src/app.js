@@ -69,4 +69,7 @@ export class BerlinClock {
         if(seconds %2===0)return "lampe jaune allumée";
         return "lampe éteinte";
     }
+    berlinClock(time){
+        
+    }
 }

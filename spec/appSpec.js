@@ -395,3 +395,7 @@ describe("the secondsLine", function () {
         expect(result).toBe("lampe éteinte");
     });
 });
+describe("the berlinclock",function(){
+    const clock=new BerlinClock();
+    
+});
