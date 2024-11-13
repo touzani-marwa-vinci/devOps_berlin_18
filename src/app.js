@@ -8,13 +8,17 @@ export class BerlinClock {
       
       if(this.oneLamp(minutes))return "1ère lampe jaune allumée";
 
-      if(minutes % 10 ===2 || minutes % 10 === 7)return "deux lampes jaune allumée";
+      if(this.twoLamp(minutes))return "deux lampes jaune allumée";
 
       if(minutes % 10 ===3 || minutes % 10 === 8)return "trois lampes jaune allumée";
 
       if(minutes % 10 ===4 || minutes % 10 === 9)return "quatre lampes jaune allumée";
 
 
+    }
+
+    twoLamp(minutes) {
+        return minutes % 10 === 2 || minutes % 10 === 7;
     }
 
     oneLamp(minutes) {
