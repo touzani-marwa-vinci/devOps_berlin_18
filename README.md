@@ -10,8 +10,13 @@ Membres du groupe :gana Kamal ,Assia Chahid ,Marwa Touzani
 Compléter les informations concernant votre numéro de groupe et membres du groupe
 # Déroulement des étapes du mini-projet-1:
 Étape 1 : implémenter la ligne des simples minutes
+
 Etape 2 : implémenter la ligne des blocs de 5 minutes
+
 Etape 3 : implémenter la ligne des heures simples
+
 Etape 4 : implémenter la ligne des blocs de 5 heures
+
 Etape 6 : implémenter la lampe des secondes
+
 Etape 7 : intégrer l’horloge entière
